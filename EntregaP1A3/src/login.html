@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastre-se</title>
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet'>
+    <link rel="stylesheet" type="text/css" href="cadastro.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <div id="divInicial">
+        <div id="top">
+            <div class="top-logo">
+                <img src="image/pngegg.png" alt="logo">
+            </div>
+            <div class="container">
+
+                <div class="hamburger">
+                    <div class="line" id="line1"></div>
+                    <div class="line" id="line2"></div>
+                    <div class="line" id="line3"></div>
+                </div>
+                
+                <aside class="sidebar" style="z-index: 1;">
+                    <nav class="menu">
+                        <div class="top-hamburguer">
+                            <!--<img class="img-responsive" src="https://www.colegioantoniovieira.com.br/wp-content/uploads/2022/10/logo-vieira-1.svg" alt="logo-vieira">-->
+                            <div class="top-user-icon-hamburguer">
+                                <img class="user-icon-hamburguer" src="image/manny5.jpg"/>
+                            </div>
+                            <div class="row-midle"></div>
+                            <div class="top-user-name-hamburguer">
+                                <font class="user-name-hamburguer">Nome</font>
+                                <font class="user-lastName-hamburguer">Sobrenome</font>
+                            </div>
+                        </div>
+                        <div>
+                            <ul >
+                                <li class="menu-item"><a href="#" class="menu-link">Home</a></li>
+                                <li class="menu-item"><a href="#" class="menu-link">Analytics</a></li>
+                                <li class="menu-item"><a href="#" class="menu-link">Apps</a></li>
+                                <li class="menu-item"><a href="#" class="menu-link">Opção 1</a></li>
+                                <li class="menu-item"><a href="#" class="menu-link">Opção 2</a></li>
+                                <li class="menu-item"><a href="#" class="menu-link">Opção 3</a></li>
+                            </ul>
+                        </div>
+                    </nav>
+                </aside>
+            </div>
+            <div class="top-user">
+                <div class="top-menu">
+                    <ul class="top-menu-list">
+                        <li><a href="#">Opção 1</a></li>
+                        <li><a href="#">Opção 2</a></li>
+                        <li><a href="#">Opção 3</a></li>
+                    </ul>
+                </div>
+                <div class="row-midle"></div>
+                <!--<div class="top-user-name">
+                    <font class="user-name">Nome</font>
+                    <font class="user-lastName">Sobrenome</font>
+                </div>
+                <div class="row-midle"></div>-->
+                <a href="login.html"><div class="top-user-icon">
+                    <img class="user-icon" src="image/account.png"/>
+                </div></a>
+            </div>
+
+        </div>
+    <div id="divPrincipal">
+        <div id="divTop">
+            <h1>Login</h1>
+            <p> Logue sua conta.</p>
+        </div>
+        <div id="divForm">
+            <Form method="get" action="">
+                
+                <div class="inputForm">
+                    <label>
+                        <label><input id="user-enter" type="text" name="user" placeholder="Usuário" /> </label>
+                    </label>
+                </div>
+
+                <div class="inputForm">
+                    <label><input id="password" type="password" name="senha" value="" placeholder="Senha" > </label>
+                    </div>
+
+                    <div class="cadastro">
+                        <p>Primeira vez? <a href="cadastro.html">Cadastre-se</a></p>
+                    </div>
+
+                <div id="divSubmit">
+                    <button id="enviar" type="submit" name="submit" value="Entrar">Entrar</button>
+                </div>
+            </Form>
+        </div>
+    </div>
+</div>
+        
+</body>
+<script src="script.js"></script>
+</html>

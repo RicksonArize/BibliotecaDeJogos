@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastre-se</title>
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet'>
+    <link rel="stylesheet" type="text/css" href="cadastro.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div id="divInicial">
+        <div id="top">
+            <div class="top-logo">
+                <img src="image/pngegg.png" alt="logo">
+            </div>
+            <div class="container">
+
+                <div class="hamburger">
+                    <div class="line" id="line1"></div>
+                    <div class="line" id="line2"></div>
+                    <div class="line" id="line3"></div>
+                </div>
+                
+                <aside class="sidebar" style="z-index: 1;">
+                    <nav class="menu">
+                        <div class="top-hamburguer">
+                            <!--<img class="img-responsive" src="https://www.colegioantoniovieira.com.br/wp-content/uploads/2022/10/logo-vieira-1.svg" alt="logo-vieira">-->
+                            <div class="top-user-icon-hamburguer">
+                                <img class="user-icon-hamburguer" src="image/manny5.jpg"/>
+                            </div>
+                            <div class="row-midle"></div>
+                            <div class="top-user-name-hamburguer">
+                                <font class="user-name-hamburguer">Nome</font>
+                                <font class="user-lastName-hamburguer">Sobrenome</font>
+                            </div>
+                        </div>
+                        <div>
+                            <ul >
+                                <li class="menu-item"><a href="#" class="menu-link">Home</a></li>
+                                <li class="menu-item"><a href="#" class="menu-link">Analytics</a></li>
+                                <li class="menu-item"><a href="#" class="menu-link">Apps</a></li>
+                                <li class="menu-item"><a href="#" class="menu-link">Opção 1</a></li>
+                                <li class="menu-item"><a href="#" class="menu-link">Opção 2</a></li>
+                                <li class="menu-item"><a href="#" class="menu-link">Opção 3</a></li>
+                            </ul>
+                        </div>
+                    </nav>
+                </aside>
+            </div>
+            <div class="top-user">
+                <div class="top-menu">
+                    <ul class="top-menu-list">
+                        <li><a href="#">Opção 1</a></li>
+                        <li><a href="#">Opção 2</a></li>
+                        <li><a href="#">Opção 3</a></li>
+                    </ul>
+                </div>
+                <div class="row-midle"></div>
+                <div class="top-user-name">
+                    <font class="user-name">Nome</font>
+                    <font class="user-lastName">Sobrenome</font>
+                </div>
+                <div class="row-midle"></div>
+                <div class="top-user-icon">
+                    <img class="user-icon" src="image/manny5.jpg"/>
+                </div>
+            </div>
+
+        </div>
+    <div id="divPrincipal">
+        <div id="divTop">
+            <h1>Cadastre Seu Jogo</h1>
+            <p> Insira as informações do seu jogo.</p>
+        </div>
+        <div id="divForm">
+            <Form method="get" action="">
+                
+                <div class="inputForm">
+                    <label>
+                        <label><input id="game-name" type="text" name="gameName" placeholder="Nome do Jogo" required/> </label>
+                    </label>
+                </div>
+                
+                <div class="inputForm">
+                    <input class="pointer" type="text" name="category" placeholder="Selecione a Categoria" readonly onfocus="dropdown1(0)" onblur="dropdown1(1)"/>
+                    <div class="dropDown">
+                        <div class="listDropDown">
+                            <div class="item" id="category-1" onmousedown="category(1)" >RPG</div>
+                            <div class="item" id="category-2" onmousedown="category(2)" >Estratégia</div>
+                            <div class="item" id="category-3" onmousedown="category(3)" >Indie</div>
+                            <div class="item" id="category-4" onmousedown="category(4)" >FPS</div>
+                            <div class="item" id="category-5" onmousedown="category(5)" >Outros</div>
+                        </div>
+        
+                    </div>
+                </div>
+
+                <div class="inputForm">
+                    <input class="pointer" type="text" name="platform" placeholder="Selecione a Pataforma" readonly onfocus="dropdown2(0)" onblur="dropdown2(1)"/>
+                    <div class="dropDown">
+                        <div class="listDropDown">
+                            <div class="item" id="platform-1" onmousedown="platform(1)" >Steam</div>
+                            <div class="item" id="platform-2" onmousedown="platform(2)" >Epic Games</div>
+                            <div class="item" id="platform-3" onmousedown="platform(3)" >PSN</div>
+                            <div class="item" id="platform-4" onmousedown="platform(4)" >Battle.net</div>
+                            <div class="item" id="platform-5" onmousedown="platform(5)" >Outros</div>
+                        </div>
+        
+                    </div>
+                </div>
+
+                <div class="inputForm">
+                    <input class="pointer" type="text" name="status" placeholder="Selecione o Status" readonly onfocus="dropdown3(0)" onblur="dropdown3(1)"/>
+                    <div class="dropDown">
+                        <div class="listDropDown">
+                            <div class="item" id="status-1" onmousedown="status(1)" >Jogado</div>
+                            <div class="item" id="status-2" onmousedown="status(2)" >Jogando</div>
+                            <div class="item" id="status-3" onmousedown="status(3)" >Zerado</div>
+                            <div class="item" id="status-4" onmousedown="status(4)" >Não Recomendo</div>
+                            <div class="item" id="status-5" onmousedown="status(5)" >Outros</div>
+                        </div>
+        
+                    </div>
+                </div>
+
+                <div class="star">
+                    <div>
+                        <input type="radio" id="cm_star-empty" name="fb" value="" checked/>
+                        <label for="cm_star-1"><i class="fa"></i></label>
+                        <input type="radio" id="cm_star-1" name="fb" value="1"/>
+                        <label for="cm_star-2"><i class="fa"></i></label>
+                        <input type="radio" id="cm_star-2" name="fb" value="2"/>
+                        <label for="cm_star-3"><i class="fa"></i></label>
+                        <input type="radio" id="cm_star-3" name="fb" value="3"/>
+                        <label for="cm_star-4"><i class="fa"></i></label>
+                        <input type="radio" id="cm_star-4" name="fb" value="4"/>
+                        <label for="cm_star-5"><i class="fa"></i></label>
+                        <input type="radio" id="cm_star-5" name="fb" value="5"/>
+                    </div>
+                </div>
+
+                <div class="inputForm">
+                    <label>
+                        <label><input id="game-url" type="url" name="url" placeholder="URL do Jogo"/> </label>
+                    </label>
+                </div>
+
+                  
+
+                <div id="divSubmit">
+                <input id="enviar" type="submit" name="submitGame" value="Cadastrar Jogo" required/>
+                </div>
+            </Form>
+        </div>
+    </div>
+</div>
+        
+</body>
+<script src="script.js"></script>
+</html>
